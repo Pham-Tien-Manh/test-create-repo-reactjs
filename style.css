@@ -1,0 +1,61 @@
+/* Bài tập về table*/
+body {
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+.information {
+    font-size: 1.4rem;
+    font-family: sans-serif;
+    align-content: center;
+    border: solid 1px #e3e3e9;
+    width: 56.6%;
+    border-bottom-width: 4px;
+    border-right-width: 2px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.td-center {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.td-color {
+    background-color: #f9faff;
+}
+
+/*Bài tập về from*/
+.registratione {
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+#heading {
+    background-color:#387d22;
+}
+
+.table-size {
+    width: 470px;
+}
+
+.border-corlor {
+    border: solid 1px #bebebe;
+    height: 20px;
+    width: 140px;
+}
+
+.style-submit {
+    border: none;
+    background-color: #fff;
+    border: 1px solid #bebebe;
+    border-radius: 4px;
+    border-bottom-width: 2px;
+    border-right-width: 2px;
+    font-size: 0.9rem;
+}
+
+
+

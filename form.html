@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="registratione">
+        <h1 id="heading">Đăng ký thành viên</h1>
+        <form action=""></form>
+            <table class="table-size" border="2" cellpadding="10">
+                <tr class="td-center">
+                    <td>Nội dung</td>
+                    <td>Giá trị</td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="name">Họ tên:</label>
+                    </td>
+                    <td>
+                        <input class="border-corlor" type="text" name="name" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="gmail">Email:</label>
+                    </td>
+                    <td>
+                        <input class="border-corlor" type="text" name="gmail" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="password">Mật khẩu:</label>
+                    </td>
+                    <td>
+                        <input class="border-corlor" type="password" name="password" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="myfile">Avatar:</label>
+                    </td>
+                    <td>
+                        <input type="file" name="myfile"  />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="usrtel">Số điện thoại:</label>
+                    </td>
+                    <td>
+                        <input class="border-corlor" type="tel" name="usrtel" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="number">Tuổi:</label>
+                    </td>
+                    <td>
+                        <input class="style-submit" type="number" min="1" max="100" name="tuoi" size="40" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="gioitinh">Giới tính:</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="gioitinh" checked="checked" /> Nam <br />
+                        <input type="radio" name="gioitinh" /> Nữ
+                    </td>
+                </tr>
+                <tr>
+                    <td>Sở thích:</td>
+                    <td>
+                        <input type="checkbox" /> Đá bóng <br />
+                        <input type="checkbox" /> Cầu lông <br />
+                        <input type="checkbox" /> Đua thuyền
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ghi chú:</td>
+                    <td>
+                        <textarea name="box" cols="18" rows="2">Buổi học đầu tiên về HTML</textarea>
+                    </td>
+                </tr>  
+            </table>
+            <input class="style-submit"type="submit" value="Đăng ký">
+        </form>
+    </div>
+</body>
+</html>
