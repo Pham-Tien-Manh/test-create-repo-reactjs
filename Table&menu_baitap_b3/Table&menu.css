@@ -1,0 +1,57 @@
+/* Table*/
+table {
+    border-collapse: collapse;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+/*Menu*/
+.menu {
+    margin-top: 50px;
+    margin-left: 50px;
+    font-family: sans-serif;
+}
+
+.navbar {
+    height: 64px;
+    width: 1040px;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-list {
+    list-style: none;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.nav-list-Greedy{
+    height: 63px;
+    width: 96px;
+    background-color: #d8d8d8;
+    margin-top: 0;
+}
+
+.nav-Greedy {
+    margin-left: -22px;
+    margin-top: 22px;
+    font-weight: bold;
+}
+
+.nav-item {
+    display: inline-block;
+    margin-right: 30px;
+    text-decoration: underline;
+}
+
+.nav-item-column::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 63px;
+    width: 10px;
+    background-color: #b6b6b6;
+    right: 269px;
+    top: 50px;
+}
