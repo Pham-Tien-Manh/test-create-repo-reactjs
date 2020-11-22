@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Mulish', sans-serif;
+}
+
+.wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.gird {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #e9f3f5;
+}
+
+.card {
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    box-sizing: border-box;
+    box-shadow: 5px 4px 10px rgb(105, 104, 104);
+    border-radius: 10px;
+}
+
+.card__img {
+    width: 100%;
+    height: calc( (3/4) * 100%);
+    background-color: #b1dbe7;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card__img--grey {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+}
+
+.card__img--grey p {
+    text-align: center;
+    margin-top: 140px;
+    font-size: 50px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.card__img:hover .card__img--grey {
+    display: block;
+}
+
+.card__img__icon {
+    height: 200px;
+    width: 140px;
+    margin: auto;
+}
+
+ .card__img__icon  img {
+    height: 100%;
+    width: 100%;
+} 
+
+.card__img a {
+    position: absolute;
+    text-decoration: none;
+    padding: 12px 27px;
+    background-color: #fff;
+    box-sizing: border-box;
+    font-size: 50px;
+    color: #000;
+    font-weight: bold;
+    border-radius: 40px;
+    margin-top: 65%;
+    margin-left: 55px;
+    box-shadow: 5px 4px 10px rgb(105, 104, 104);
+}
+
+.card > .card__img > a > p {
+    margin-top: -5px;
+}
+
+.card__content {
+    width: 100%;
+    background-color: #fff;
+    height: calc( (1/4) * 100% );
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+}
+
+.card__content p {
+    margin: auto;
+    font-size: 36px;
+    color: #222222;
+}
+
+.card__content::before {
+    content: "";
+    display: block;
+    border: 24px solid;
+    border-color: #b1dbe7 transparent transparent transparent;
+    position: absolute;
+    margin-left: 17%;
+}

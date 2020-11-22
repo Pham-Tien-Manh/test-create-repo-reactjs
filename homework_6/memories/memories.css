@@ -1,0 +1,95 @@
+.gwrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-family: 'Damion', cursive;
+}
+
+.memories__list {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.memories__item {
+    height: 270px;
+    width: 210px;
+    background-color: #fff;
+    display: flex;
+    position: absolute;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    box-shadow: 3px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.memories__item__img {
+    width: 176px;
+    height: calc((9/12) * 100% );
+    margin: 0 auto;
+    margin-top: 17px;
+}
+
+.memories__list > .memories__item > .memories__item__img > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.memories__item__title {
+    width: 100%;
+    height: calc((2/12) * 100% );
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.memories__list > .memories__item > .memories__item__title > p {
+    margin: 6px 0px 0px 0px;
+    font-size: 16px;
+}
+
+.memories__item--berlin {
+    margin-top: 21%;
+    margin-left: 11%;
+    transform: rotate(-4deg);
+}
+
+.memories__item--london {
+    margin-top: -18%;
+    transform: rotate(-2deg);
+    margin-right: 7%;
+}
+
+.memories__item--los-angeles {
+    margin-right: 13%;
+    margin-top: 10%;
+    transform: rotate(-4deg);
+}
+
+.memories__item--italy {
+    margin-left: 15%;
+    margin-bottom: 4%;
+    transform: rotate(7deg)
+}
+
+.memories__item--active {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(255, 242, 242, 0.5);
+}
+
+.memories__item:hover .memories__item--active  {
+    display: none;
+}
+
+.memories__item:hover {
+    z-index: 2;
+    transform: rotate(0deg);
+}
