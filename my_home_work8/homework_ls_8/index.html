@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Padauk:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.scss">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="menu">
+        <div class="menu__wrap">
+            <ul class="menu__list">
+                <li class="menu__item menu__item--used">
+                    <div class="menu__item__icon"> <i class="fas fa-home"></i> </div>
+                    <div class="menu__item__title">
+                        <h4>HOME</h4>
+                        <p>sweet home</p>
+                    </div>
+                </li>
+
+                <li class="menu__item menu__item--active">
+                    <div class="menu__item__icon"> <i class="fas fa-edit"></i> </div>
+                    <div class="menu__item__title">
+                        <h4>ABOUT US</h4>
+                        <p>sweet home</p>
+                    </div>
+                </li>
+
+                <li class="menu__item">
+                    <div class="menu__item__icon"> <i class="fas fa-gift"></i> </div>
+                    <div class="menu__item__title">
+                        <h4>FEATURSE</h4>
+                        <p>sweet home</p>
+                    </div>
+                </li>
+
+                <li class="menu__item menu__item--used">
+                    <div class="menu__item__icon"> <i class="fas fa-globe-americas"></i> </div>
+                    <div class="menu__item__title">
+                        <h4>NEWS</h4>
+                        <p>sweet home</p>
+                    </div>
+                </li>
+
+                <li class="menu__item menu__item--blog menu__item--used">
+                    <div class="menu__item__icon"> <i class="fas fa-comments"></i> </div>
+                    <div class="menu__item__title">
+                        <h4>BLOG</h4>
+                        <p>sweet home</p>
+                    </div>
+                    <ul class="menu__child__list menu__child__list--used menu__child--blog">
+                        <li class="menu__child__item menu__item--used">
+                            <div class="menu__child__item--icon">
+                                <i class="fas fa-globe-americas"></i>
+                            </div>
+                            <div class="menu__child__item--title">Mission</div>
+                        </li>
+
+                        <li class="menu__child__item menu__item--used menu__child__list--blog">
+                            <div class="menu__child__item--icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="menu__child__item--title">Our team</div>
+
+                            <ul class="menu__child__list menu__child__list__child menu__child__list--used">
+                                <li class="menu__child__item menu__item--used menu__child__item__child">
+                                    <div class="menu__child__item--icon">
+                                        <i class="fas fa-female"></i>
+                                    </div>
+                                    <div class="menu__child__item--title">Leyla Sparks</div>
+                                </li>
+
+                                <li class="menu__child__item menu__item--used menu__child__item__child item__child--ismailov">
+                                    <div class="menu__child__item--icon">
+                                        <i class="fas fa-male"></i>
+                                    </div>
+                                    <div class="menu__child__item--title">Gleb Ismailov</div>
+
+                                    <ul class="menu__child__list menu__child__list--ismailov menu__child__list--used">
+                                        <li class="menu__child__item menu__item--used menu__child__item--ismailov">
+                                            <div class="menu__child__item--icon">
+                                                <i class="fas fa-leaf"></i>
+                                            </div>
+                                            <div class="menu__child__item--title">About</div>
+                                        </li>
+
+                                        <li class="menu__child__item menu__item--used menu__child__item--ismailov">
+                                            <div class="menu__child__item--icon">
+                                                <i class="fas fa-female"></i>
+                                            </div>
+                                            <div class="menu__child__item--title">Skills</div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="menu__child__item menu__item--used menu__child__item__child">
+                                    <div class="menu__child__item--icon">
+                                        <i class="fas fa-female"></i>
+                                    </div>
+                                    <div class="menu__child__item--title">Viktoria Gibbers</div>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="menu__child__item menu__item--used">
+                            <div class="menu__child__item--icon">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <div class="menu__child__item--title">Rewards</div>
+                        </li>
+
+                        <li class="menu__child__item menu__item--used">
+                            <div class="menu__child__item--icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <div class="menu__child__item--title">Certificates</div>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="menu__item">
+                    <div class="menu__item__icon"> <i class="far fa-image"></i> </div>
+                    <div class="menu__item__title">
+                        <h4>PORTFOLIO</h4>
+                        <p>sweet home</p>
+                    </div>
+                </li>
+
+                <li class="menu__item">
+                    <div class="menu__item__icon"> <i class="far fa-envelope"></i> </div>
+                    <div class="menu__item__title">
+                        <h4>CONTACTS</h4>
+                        <p>sweet home</p>
+                    </div>
+                </li>
+
+                <li class="menu__item menu__item--search">
+                    <div class="menu__iten--search__wrap">
+                        <input type="text" name="search" id="search" placeholder="search ...">
+                        <button class="menu__item--search__btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
