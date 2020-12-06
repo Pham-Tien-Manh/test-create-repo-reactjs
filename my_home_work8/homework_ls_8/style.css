@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #eeeeee;
+  display: flex;
+}
+.menu .menu__wrap {
+  margin: auto;
+  font-family: "Padauk", sans-serif;
+}
+.menu .menu__wrap .menu__list {
+  list-style: none;
+}
+.menu .menu__wrap .menu__list .menu__item {
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding: 10px 86px 10px 20px;
+  box-sizing: border-box;
+  color: #777777;
+  background-color: #fff;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom: 1px solid #eeeeee;
+  cursor: pointer;
+}
+.menu .menu__wrap .menu__list .menu__item .menu__item__icon {
+  font-size: 24px;
+  padding-right: 10px;
+}
+.menu .menu__wrap .menu__list .menu__item .menu__item__title h4 {
+  line-height: 18px;
+}
+.menu .menu__wrap .menu__list .menu__item .menu__item__title p {
+  font-size: 13px;
+}
+.menu .menu__wrap .menu__list .menu__item .menu__child__list {
+  position: absolute;
+  right: -81%;
+  top: 0;
+}
+.menu .menu__wrap .menu__list .menu__item .menu__child__list .menu__child__item {
+  background-color: #fff;
+  height: 32px;
+  width: 186px;
+  border-bottom: 1px solid #eeeeee;
+  display: flex;
+  color: #777777;
+  padding: 7px;
+  font-weight: bold;
+  align-items: center;
+}
+.menu .menu__wrap .menu__list .menu__item .menu__child__list .menu__child__item .menu__child__item--icon {
+  font-size: 17px;
+}
+.menu .menu__wrap .menu__list .menu__item .menu__child__list .menu__child__item .menu__child__item--title {
+  padding-left: 8px;
+}
+.menu .menu__wrap .menu__list .menu__item .menu__child__list .menu__item--used:hover {
+  color: #d8823b;
+}
+.menu .menu__wrap .menu__list .menu__item .menu__child__list--blog:hover .menu__child__list__child {
+  display: block;
+}
+.menu .menu__wrap .menu__list .menu__item .menu__child__list__child {
+  top: 47px;
+  right: -84%;
+  display: none;
+}
+.menu .menu__wrap .menu__list .menu__item .menu__child__list__child .menu__child__item__child {
+  width: 150px;
+}
+.menu .menu__wrap .menu__list .menu__item .item__child--ismailov:hover .menu__child__list--ismailov {
+  display: block;
+}
+.menu .menu__wrap .menu__list .menu__item .menu__child__list--ismailov {
+  top: 46px;
+  left: 103%;
+  display: none;
+}
+.menu .menu__wrap .menu__list .menu__item .menu__child__list--ismailov .menu__child__item--ismailov {
+  width: 160px;
+}
+.menu .menu__wrap .menu__list .menu__item--active {
+  border-left: 5px solid #d8823b;
+  border-right: 5px solid #d8823b;
+  color: #d8823b;
+  box-shadow: 0px 4px 18px #ccc;
+}
+.menu .menu__wrap .menu__list .menu__item--active::before {
+  content: "";
+  border: 7px solid;
+  border-color: transparent transparent transparent #d8823b;
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+.menu .menu__wrap .menu__list .menu__item--active::after {
+  content: "";
+  border: 7px solid;
+  border-color: transparent #d8823b transparent transparent;
+  position: absolute;
+  top: 20px;
+  left: 228px;
+}
+.menu .menu__wrap .menu__list .menu__item--blog:hover .menu__child--blog {
+  display: block;
+}
+.menu .menu__wrap .menu__list .menu__child--blog {
+  display: none;
+}
+.menu .menu__wrap .menu__list .menu__item--used:hover {
+  color: #d8823b;
+}
+.menu .menu__wrap .menu__list .menu__item--search {
+  height: 60px;
+  padding: 10px;
+}
+.menu .menu__wrap .menu__list .menu__item--search .menu__iten--search__wrap {
+  border: 1px solid #eeeeee;
+  height: 100%;
+  width: 100%;
+}
+.menu .menu__wrap .menu__list .menu__item--search .menu__iten--search__wrap input {
+  height: 100%;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  padding-left: 10px;
+}
+.menu .menu__wrap .menu__list .menu__item--search .menu__iten--search__wrap .menu__item--search__btn {
+  height: 32px;
+  width: 40px;
+  border: none;
+  outline: none;
+  background-color: #d8823b;
+  border-radius: 3px;
+  margin-right: 4px;
+  cursor: pointer;
+}
+.menu .menu__wrap .menu__list .menu__item--search .menu__iten--search__wrap .menu__item--search__btn i {
+  color: #fff;
+  font-size: 16px;
+}
+
+.menu__child__list--used::before {
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  content: "";
+  display: block;
+  background-color: #d8823b;
+  left: -4px;
+}
+.menu__child__list--used::after {
+  content: "";
+  border: 7px solid;
+  border-color: transparent #d8823b transparent transparent;
+  position: absolute;
+  top: 20px;
+  left: -18px;
+}
+
+/*# sourceMappingURL=style.css.map */
